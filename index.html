@@ -5,6 +5,19 @@
  	<link href="main.css" rel="stylesheet" type="text/css" />
     <!-- <script src="main.js"></script> -->
         <title>Travel Log; TLOG</title>
+        <script>
+            function change(id){
+                const idx = id.charAt(id.length-1);
+                
+                for(let i = 1; i < 5; i++){
+                    if(idx == i){
+                        document.getElementById("img_" + i).className = 'imgOn';
+                    }else{
+                        document.getElementById("img_" + i).className = 'imgOff';
+                    }
+                }
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -70,6 +83,11 @@
                           </div>
                           <div class="content-dis">
                             <h2>바르셀로나</h2>
+                            <p>
+                                스페인에서 두 번째로 큰 도시이자 가장 큰 항구 도시기도 하다.<br>
+                                주요 관광명소로는 사그라다 파밀리아, 구엘 공원 등<br>
+                                가우디가 건축한 각종 건축물들, 스페인 광장, 피카소 미술관 등이 있다.
+                            </p>
                             <a href="#">자세히 보기<img class="more_w" src="media/more_w.svg" alt="more"></a>
                           </div>
                         </div>
@@ -81,22 +99,21 @@
                         <img id="img_4" src="https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/KA374GL4G53N6SH4EBFCFK6SFY.jpg" alt="바르셀로나">
                     </div>
                 </div>
-                <script>
-                    function change(id){
-                        const idx = id.charAt(id.length-1);
-                        
-                        for(let i = 1; i < 5; i++){
-                            const select = "img_" + idx;
-                            const sel = document.getElementById(select).charAt(document.getElementById(select.length-1));
-                            if(document.getElementById(select)){
-                                alert(select + "//" + i);
-                                document.getElementById(select).className = 'imgOn';
-                            }else{
-                                document.getElementById("img_" + i).className = 'imgOff';
-                            }
-                        }
-                    }
-                </script>
+            </section>
+            <section>
+                <div class="crew_wrap">
+                    <div class="title_wrap">
+                        <p class="sub_tlt side_set">Crew</p>
+                        <p class="main_tlt side_set">여행자</p>
+                    </div>
+                    <div class="crew_con side_set">
+                        <p>
+                            서씨 셋, 정씨 둘, 최씨 하나<br>
+                            셋, 둘, 하나
+                        </p>
+                        <a href="#">MORE<img src="media/arrow.png" alt="more"></a>
+                    </div>
+                </div>
             </section>        
        </div>
     </body>

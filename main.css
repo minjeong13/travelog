@@ -18,7 +18,7 @@ header {background: url('media/main_visual01.png') no-repeat; background-size: 1
 .nav_wrap .nav_rt ul li a:hover {font-weight: bold;}
 .visual_txt {font-size: 150px; font-weight: 700; letter-spacing: 30px; color: #ffffffc0; text-align: center;margin-top: 280px;}
 
-/* main section*/
+/* main section_01 */
 .main_view_wrap .title_wrap {text-align: center; margin-top: 100px;}
 .main_view_wrap .title_wrap .sub_tlt {font-size: 16px; font-weight: 400; color: #333; line-height: normal;}
 .main_view_wrap .title_wrap .main_tlt {font-size: 36px; font-weight: 700; color: #333; line-height: normal;}
@@ -39,7 +39,13 @@ header {background: url('media/main_visual01.png') no-repeat; background-size: 1
 
 .con_r .imgOff {display: none;}
 .imgOn {display: block !important;}
-#tab-1:checked ~ .con_r > img:nth-child(1), #tab-2:checked ~ .con_r > img:nth-child(2), #tab-3:checked ~ .con_r > img:nth-child(3), #tab-4:checked ~ .con_r > img:nth-child(4)  {display: block;}
 .con_r > img {width: 100%; height: 100%; object-fit: cover; }
+
+/* main section_02 */
+.crew_wrap {width: 100%; height: 640px; background-color: #333; position: relative;}
+.crew_wrap .title_wrap {position: absolute; width: 1000px; height: 570px; background-color: #fff; padding: 100px 0;}
+.side_set {text-align: left; margin-left: 15%;}
+.crew_con {position: relative;}
+
 /* footer */
 footer {width: 100%; height: 360px; background-color: #333;}
