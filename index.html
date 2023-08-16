@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8">
+ 	<link href="main.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="main.js"></script> -->
+        <title>Travel Log; TLOG</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav_wrap">
+                <p class="logo">TLOG</p>
+                <div class="nav_rt">
+                    <ul>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CREW</a></li>
+                        <li><a href="#">ROUTE</a></li>
+                        <li><a href="#">HISTORY</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p class="visual_txt">SPAIN</p>
+        </header>
+       <div class="main_view_wrap">
+            <section>
+                <div class="title_wrap">
+                    <p class="sub_tlt">Travel</p>
+                    <p class="main_tlt">여행지</p>
+                </div>
+                <div class="con_wrap">
+                    <div class="con_l">
+                        <input type="radio" id="tab-1" name="show" onclick="change(this.id)" checked/>
+                        <input type="radio" id="tab-2" name="show" onclick="change(this.id)"/>
+                        <input type="radio" id="tab-3" name="show" onclick="change(this.id)"/>
+                        <input type="radio" id="tab-4" name="show" onclick="change(this.id)"/>
+                        <div class="tab">
+                          <label for="tab-1">마드리드</label>
+                          <label for="tab-2">세비야</label>
+                          <label for="tab-3">그라나다</label>
+                          <label for="tab-4">바르셀로나</label>
+                        </div>
+                        <div class="content">
+                          <div class="content-dis">
+                            <h2>마드리드 - 톨레도</h2>
+                            <p>
+                                스페인 중부 톨레도 주의 도시.<br>
+                                세르반테스 언덕을 타호 강이 둘러싸고 있어 로마 시대부터 천연의 요새로<br>
+                                발전해 왔고 스페인 역사에서 오랫동안 수도 내지는 중심지 역할을 했던 도시다.<br>
+                                오랜 역사를 거치며 스페인 문화를 잘 대변하는 곳이다.
+                            </p>
+                            <a href="#">자세히 보기<img class="more_w" src="media/more_w.svg" alt="more"></a>
+                          </div>
+                          <div class="content-dis">
+                            <h2>세비야</h2>
+                            <p>
+                                세비야는 스페인 남서부 안달루시아 지방에 위치한 대도시.<br>
+                                세비야 에스파냐 광장 (스페인 광장)이 유명하며,<br>
+                                점심 시간 후 쯤에는 플라멩코를 볼 수 있고 음악가들도 많이 찾는다.
+                            </p>
+                            <a href="#">자세히 보기<img class="more_w" src="media/more_w.svg" alt="more"></a>
+                          </div>
+                          <div class="content-dis">
+                            <h2>그라나다</h2>
+                            <p>
+                                스페인 남부 안달루시아지방에 있는 자치주.<br>
+                                과거 이베리아 반도 최후의 이슬람 세력인 나스르 왕조의 수도 였다.<br>
+                                이들이 남긴 알함브라 궁전은 이슬람 건축의 정수로 손꼽힌다. 
+                            </p>
+                            <a href="https://namu.wiki/w/%EA%B7%B8%EB%9D%BC%EB%82%98%EB%8B%A4(%EC%8A%A4%ED%8E%98%EC%9D%B8)">자세히 보기<img class="more_w" src="media/more_w.svg" alt="more"></a>
+                          </div>
+                          <div class="content-dis">
+                            <h2>바르셀로나</h2>
+                            <a href="#">자세히 보기<img class="more_w" src="media/more_w.svg" alt="more"></a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="con_r">
+                        <img id="img_1" src="https://mblogthumb-phinf.pstatic.net/MjAxOTA1MTFfMTU3/MDAxNTU3NTY1ODE5MjM1.s1rQ9MH3r2EBo79WsZEutdDRIwoBdpwc5ulNC5hZapsg.IeNSI5rRxqeXlc_3M3L6Q8y2QfBZi23kC1F-AC2QBjkg.JPEG.jrkimceo/alcazar-de-toledo.jpg?type=w800" alt="톨레도">
+                        <img id="img_2" src="https://image14.hanatour.com/uploads/2020/02/svq0461_(1495)_58255256.jpg" alt="세비야">
+                        <img id="img_3" src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/7bee3c2f-559c-4a0d-b013-ad75ee5c3042.jpeg" alt="그라나다">
+                        <img id="img_4" src="https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/KA374GL4G53N6SH4EBFCFK6SFY.jpg" alt="바르셀로나">
+                    </div>
+                </div>
+                <script>
+                    function change(id){
+                        const idx = id.charAt(id.length-1);
+                        
+                        for(let i = 1; i < 5; i++){
+                            const select = "img_" + idx;
+                            const sel = document.getElementById(select).charAt(document.getElementById(select.length-1));
+                            if(document.getElementById(select)){
+                                alert(select + "//" + i);
+                                document.getElementById(select).className = 'imgOn';
+                            }else{
+                                document.getElementById("img_" + i).className = 'imgOff';
+                            }
+                        }
+                    }
+                </script>
+            </section>        
+       </div>
+    </body>
+</html>
