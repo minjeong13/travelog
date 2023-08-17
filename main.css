@@ -4,22 +4,28 @@
 body {font-family: 'Noto Sans KR', sans-serif, 'Roboto'; margin: 0;}
 p {margin: 0;}
 button { border: none; cursor: pointer;background:none;}
+a {text-decoration: none; color: #333;}
+
+/* margin */
+.mgt100 {margin-top: 100px;}
+.mgt12 {margin-top: 120px;}
+.mgt15 {margin-top: 150px;}
 
 /* main navi */
 header {background: url('media/main_visual01.png') no-repeat; background-size: 100% 960px; width: 100%; height: 960px;}
 .nav_wrap {padding: 15px 5%; display: flex; justify-content: space-between; align-items: center;}
-.nav_wrap .logo {font-size: 30px; font-weight: bold; color: #ffffffc0; }
+.nav_wrap .logo_w {font-size: 30px; font-weight: bold; color: #ffffffc0; }
 .nav_wrap .nav_lf {display: flex; align-items: center;}
 .nav_wrap .nav_lf span {font-weight: 700;}
 .nav_wrap .nav_lf img {width: 100px;}
 .nav_wrap .nav_rt ul {list-style-type: none; margin: 0; padding: 0;}
 .nav_wrap .nav_rt ul li {display: block; float: left; margin-right: 20px;}
 .nav_wrap .nav_rt ul li a {text-decoration: none; font-weight: 300; font-size: 16px; color: white;}
-.nav_wrap .nav_rt ul li a:hover {font-weight: bold;}
+.nav_wrap .nav_rt ul li a:hover {font-weight: bold; letter-spacing:-0.88px;}
 .visual_txt {font-size: 150px; font-weight: 700; letter-spacing: 30px; color: #ffffffc0; text-align: center;margin-top: 280px;}
 
 /* main section_01 */
-.main_view_wrap .title_wrap {text-align: center; margin-top: 100px;}
+.main_view_wrap .title_wrap {text-align: center;}
 .main_view_wrap .title_wrap .sub_tlt {font-size: 16px; font-weight: 400; color: #333; line-height: normal;}
 .main_view_wrap .title_wrap .main_tlt {font-size: 36px; font-weight: 700; color: #333; line-height: normal;}
 
@@ -42,10 +48,34 @@ header {background: url('media/main_visual01.png') no-repeat; background-size: 1
 .con_r > img {width: 100%; height: 100%; object-fit: cover; }
 
 /* main section_02 */
-.crew_wrap {width: 100%; height: 640px; background-color: #333; position: relative;}
-.crew_wrap .title_wrap {position: absolute; width: 1000px; height: 570px; background-color: #fff; padding: 100px 0;}
-.side_set {text-align: left; margin-left: 15%;}
-.crew_con {position: relative;}
+.crew_wrap {width: 100%; height: 640px; background-color: #333; position: relative; overflow: hidden;}
+.crew_wrap .crew_back {margin-left: 25%; object-fit: cover; width: 100%; height: 100%;}
+.con_box {width: 1000px; height: 520px; position: absolute; background-color: #fff; bottom: 0;}
+.side_tlt p {text-align: left;}
+.side_tlt {padding: 0 24%;}
+.txt_box {margin-top: 50px;}
+.txt_box p {margin-bottom: 30px;}
+.txt_box a {display: flex; align-items: flex-end;}
+.txt_box a img {margin-left: 20px;}
+
+/* main section_03 */
+.box_wrap {display: flex; justify-content: center; margin: 80px 0 150px;}
+.box_wrap .box {width: 300px; height: 360px; border: 1px solid #ddd; margin-right: 15px; padding: 20px;}
+.box_wrap .box:last-child {margin-right: 0;}
+.box_wrap .box img {width: 80px; height: 80px;}
+
+/* main section_04 */
+.mail_wrap {background-color: #333; padding: 150px 0; display: flex; justify-content: center;}
+.txt_left {text-align: left !important;}
+.mail_wrap .mail_l {width: 650px;}
+.mail_wrap .mail_l .title_wrap p {color: #fff !important;}
+.mail_wrap .mail_r {width: 650px; display: flex; flex-direction: column; align-items: flex-end;}
+.mail_txt {color: #fff; font-size: 16px; font-weight: 300; margin-top: 40px;}
+.mail_r input, .mail_r textarea  {width: 590px; background-color: #333; border: 1px solid #fff; padding: 15px;}
+.mail_r input {margin-bottom: 15px;}
+.mail_r textarea {height: 180px;margin-bottom: 15px;}
+.mail_r button {width: 100px; height: 40px; color: #333; background-color: #fff;}
+
 
 /* footer */
 footer {width: 100%; height: 360px; background-color: #333;}

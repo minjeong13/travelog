@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {font-family: 'Noto Sans KR', sans-serif, 'Roboto'; margin: 0;}
+p {margin: 0;}
+button { border: none; cursor: pointer;background:none;}
+a, a:hover, a:visited, a:focus, a:active {text-decoration: none; color: #333;}
+
+
+/* navi */
+.nav_wrap {padding: 15px 5%; display: flex; justify-content: space-between; align-items: center;}
+.nav_wrap .logo a {font-size: 30px; font-weight: bold; color: #333; }
+.nav_wrap .nav_lf {display: flex; align-items: center;}
+.nav_wrap .nav_lf span {font-weight: 700;}
+.nav_wrap .nav_lf img {width: 100px;}
+.nav_wrap .nav_rt ul {list-style-type: none; margin: 0; padding: 0;}
+.nav_wrap .nav_rt ul li {display: inline-block; float: left; margin-right: 20px;}
+.nav_wrap .nav_rt ul li a {text-decoration: none; font-weight: 300; font-size: 16px; color: #333; position: relative;}
+.pageOn {font-weight: 700 !important; letter-spacing:-0.88px;}
+.nav_wrap .nav_rt ul li a:hover {font-weight: bold; position: relative; letter-spacing:-0.88px;}
+
+.top_txt {width: 1400px; margin: 0 auto; min-width: 1190px;}
+.suv_v {width: 100%; height: 360px; position: relative; display: flex; justify-content: center; margin-top: 30px;}
+.suv_v img {width: 100%; height: 100%; object-fit: cover;}
+.suv_v p {position: absolute; bottom: 0; width: 1400px; margin: 0 auto; font-size: 80px; color: #fff; font-weight: 700;}

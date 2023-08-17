@@ -17,16 +17,19 @@
                     }
                 }
             }
+            function sendPop(){
+                confirm("메일을 전달하시겠습니까?");
+            }
         </script>
     </head>
     <body>
         <header>
             <nav class="nav_wrap">
-                <p class="logo">TLOG</p>
+                <p class="logo_w">TLOG</p>
                 <div class="nav_rt">
                     <ul>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">CREW</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="crew.html">CREW</a></li>
                         <li><a href="#">ROUTE</a></li>
                         <li><a href="#">HISTORY</a></li>
                     </ul>
@@ -36,7 +39,7 @@
         </header>
        <div class="main_view_wrap">
             <section>
-                <div class="title_wrap">
+                <div class="title_wrap mgt100">
                     <p class="sub_tlt">Travel</p>
                     <p class="main_tlt">여행지</p>
                 </div>
@@ -102,19 +105,66 @@
             </section>
             <section>
                 <div class="crew_wrap">
-                    <div class="title_wrap">
-                        <p class="sub_tlt side_set">Crew</p>
-                        <p class="main_tlt side_set">여행자</p>
-                    </div>
-                    <div class="crew_con side_set">
-                        <p>
-                            서씨 셋, 정씨 둘, 최씨 하나<br>
-                            셋, 둘, 하나
-                        </p>
-                        <a href="#">MORE<img src="media/arrow.png" alt="more"></a>
+                    <img class="crew_back" src="media/airplain.jpg" alt="back">
+                    <div class="con_box">
+                        <div class="title_wrap side_tlt mgt12">
+                            <p class="sub_tlt">Crew</p>
+                            <p class="main_tlt">여행자</p>
+                        </div>
+                        <div class="txt_box side_tlt">
+                            <p>
+                                서씨 셋, 정씨 둘, 최씨 하나<br>
+                                셋, 둘, 하나
+                            </p>
+                            <a href="#">MORE <img src="media/arrow.png" alt="arrow"></a>
+                        </div>
                     </div>
                 </div>
-            </section>        
+            </section>  
+            <section>
+                <div class="title_wrap mgt15">
+                    <p class="sub_tlt">Outro</p>
+                    <p class="main_tlt">제작참여</p>
+                </div>
+                <div class="box_wrap">
+                    <div class="box">
+                        <img src="media/figma.png" alt="figma">
+
+                    </div>
+                    <div class="box">
+                        <img src="media/figma.png" alt="figma">
+
+                    </div>
+                    <div class="box">
+                        <img src="media/figma.png" alt="figma">
+
+                    </div>
+                    <div class="box">
+                        <img src="media/figma.png" alt="figma">
+
+                    </div>
+                </div>
+            </section>  
+            <section>
+                <div class="mail_wrap">
+                    <div class="mail_l">
+                        <div class="title_wrap txt_left">
+                            <p class="sub_tlt">Recommendation</p>
+                            <p class="main_tlt">여행지 추천</p>
+                        </div>
+                        <p class="mail_txt">
+                            이외에 추천해주시고 싶은 여행지나 루트가 있다면,<br>
+                            메일로 보내주세요.<br>
+                            즐겁게 참고하겠습니다 :) <br>
+                        </p>
+                    </div>
+                    <div class="mail_r">
+                        <input type="email" placeholder="E-mail">
+                        <textarea name="contents" id="contents" cols="30" rows="10" placeholder="Contents"></textarea>
+                        <button type="send" onclick="sendPop()">SEND</button>
+                    </div>
+                </div>
+            </section>    
        </div>
     </body>
 </html>
