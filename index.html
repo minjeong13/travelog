@@ -20,18 +20,25 @@
             function sendPop(){
                 confirm("메일을 전달하시겠습니까?");
             }
+            function showImage(){
+                var imgNum = Math.round(Math.random()*3) + 1;
+                var objImg = document.getElementById("main_banner");
+                objImg.style.backgroundImage = "url(media/main_visual0" + imgNum + ".png)";
+                setTimeout(showImage,4000);
+            }
+
         </script>
     </head>
-    <body>
-        <header>
+    <body onload="showImage()">
+        <header id="main_banner">
             <nav class="nav_wrap">
-                <p class="logo_w">TLOG</p>
+                <p class="logo_w"><a href="index.html">TLOG</a></p>
                 <div class="nav_rt">
                     <ul>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="crew.html">CREW</a></li>
-                        <li><a href="#">ROUTE</a></li>
-                        <li><a href="#">HISTORY</a></li>
+                        <li><a href="route.html">ROUTE</a></li>
+                        <li><a href="history.html">HISTORY</a></li>
                     </ul>
                 </div>
             </nav>

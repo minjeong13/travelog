@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="sub.css" rel="stylesheet" type="text/css" />
   <title>Travel Log; TLOG</title>
+  <script>
+    function selMbti(value){
+      if(value == "P"){
+        const element = document.getElementById('mbti');
+        element.innerHTML = '<span style="color:white">당신은 즉흥적인 P성향!</span><br><span>스트레스 받지 않지만 챙길건 챙겨야하지 않을까?</span>';
+      }else{
+        const element = document.getElementById('mbti');
+        element.innerHTML = '<span style="color:white">당신은 계획적인 J성향!</span><br><span>너무 열심히 챙기려다 스트레스 받지 않을까?</span>';
+      }
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -14,8 +25,8 @@
             <ul>
                 <li><a href="about.html" class="pageOn">ABOUT</a></li>
                 <li><a href="crew.html">CREW</a></li>
-                <li><a href="#">ROUTE</a></li>
-                <li><a href="#">HISTORY</a></li>
+                <li><a href="route.html">ROUTE</a></li>
+                <li><a href="history.html">HISTORY</a></li>
             </ul>
         </div>
       </nav>
@@ -31,5 +42,85 @@
         <p>About</p>
       </div>
   </header>
+  <section>
+    <div class="con_wrap mg80 dpf">
+      <div class="box_l">
+        <p>티로그 소개</p>
+        <p>Travel<br>+<br>Log</p>
+        <a href="info.html" class="info_btn">여행지 정보 보기</a>
+      </div>
+      <div class="box_r">
+        <p>
+          티로그는 해외 여행을 위한 계획, 기록, 소개를 위한 페이지입니다. 이번 여행지는 ‘스페인’으로 페이지의 전반적인 내용은<br>
+          스페인 여행에 관한 일정을 담을 것입니다. 과제로 시작하였지만 기획을 하다보니 욕심이 생겨 기획부터 디자인, 코딩까지<br>
+          모두 열심히 하였습니다.
+        </p>
+        <p>
+          티로그 ; Travel + Log. 여행의 기록을 담는 페이지라는 의미로 이전 여행도, 이번 여행도, 다음 여행도 기록하겠다는<br>
+          의미로 만들게 되었습니다.
+        </p>
+        <div class="info_wrap">
+          <p class="info">
+            <span>여행지</span><br>
+            스페인
+          </p>
+          <p class="info">
+            <span>여행일</span><br>
+            2024.02.02 ~ 2024.02.18
+          </p>
+          <p class="info">
+            <span>여행 IN & OUT</span><br>
+            마드리드 IN - 바르셀로나 OUT
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="back">
+      <div class="con_wrap dpf">
+        <div class="con_l">
+          <p>
+            당신의 여행스타일은 무엇인가요?
+          </p>
+          <div>
+            <label for="mbti-p">
+              <input type="radio" id="mbti-p" name="mbti" value="P" onclick="selMbti(this.value)">
+              전날 싸면 되지 않나
+            </label>
+            <label for="mbti-j">
+              <input type="radio" id="mbti-j" name="mbti" value="J" onclick="selMbti(this.value)">
+              한달 전부터 차근차근 짐싸기
+            </label>
+          </div>
+        </div>
+        <div class="con_r">
+          <p id="mbti"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer_wrap">
+      <div class="com_info">
+        <p class="logo_w"><a href="index.html">TLOG</a></p>
+        <div>
+          <p>회사명 : (주) 가족회사</p>
+          <p>대표명 : 최씨</p>
+          <p>주소 : 서울특별시 어쩌구 저쩌동 11-22</p>
+        </div>
+        <div>
+          <p>E-mail : gajok_cp@tlog.co.kr</p>
+          <p>Tel : 070 - 123 - 4567</p>
+          <p>Fax : 070 - 234 - 5678</p>
+        </div>
+      </div>
+      <div class="site_info">
+        <p>개인정보는 보호해줌</p>
+        <p>사이트맵은 간단하니까 없음</p>
+        <p>이용잘하면 됨됨</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

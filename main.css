@@ -12,9 +12,9 @@ a {text-decoration: none; color: #333;}
 .mgt15 {margin-top: 150px;}
 
 /* main navi */
-header {background: url('media/main_visual01.png') no-repeat; background-size: 100% 960px; width: 100%; height: 960px;}
+#main_banner { background-size: 100% 960px; width: 100%; height: 960px;}
 .nav_wrap {padding: 15px 5%; display: flex; justify-content: space-between; align-items: center;}
-.nav_wrap .logo_w {font-size: 30px; font-weight: bold; color: #ffffffc0; }
+.nav_wrap .logo_w a{font-size: 30px; font-weight: bold; color: #ffffffc0; }
 .nav_wrap .nav_lf {display: flex; align-items: center;}
 .nav_wrap .nav_lf span {font-weight: 700;}
 .nav_wrap .nav_lf img {width: 100px;}
@@ -77,5 +77,4 @@ header {background: url('media/main_visual01.png') no-repeat; background-size: 1
 .mail_r button {width: 100px; height: 40px; color: #333; background-color: #fff;}
 
 
-/* footer */
-footer {width: 100%; height: 360px; background-color: #333;}
+
