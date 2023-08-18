@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="sub.css" rel="stylesheet" type="text/css" />
+  <script src="history.js" type="text/javascript"></script>
   <title>Travel Log; TLOG</title>
 </head>
 <body>
@@ -32,18 +33,62 @@
       </div>
   </header>
   <section>
-    <div class="theme_wrap">
+    <div class="theme_wrap slide-container">
       <div class="title_wrap mg80">
-        <p class="sub_tlt">French</p>
+        <p class="sub_tlt">France</p>
         <p class="main_tlt">프랑스</p>
       </div>
-      <ul>
-        <li><img src="media/fr_01.jpg" alt="franch_01"></li>
-        <li><img src="media/fr_02.jpg" alt="franch_02"></li>
-        <li><img src="media/fr_03.jpg" alt="franch_03"></li>
-        <li><img src="media/fr_04.jpg" alt="franch_04"></li>
-        <li><img src="media/fr_05.jpg" alt="franch_05"></li>
+      <ul class="slide fr">
+        <li><img src="media/fr_01.jpg" alt="france_01"></li>
+        <li><img src="media/fr_02.jpg" alt="france_02"></li>
+        <li><img src="media/fr_03.jpg" alt="france_03"></li>
+        <li><img src="media/fr_04.jpg" alt="france_04"></li>
+        <li><img src="media/fr_05.jpg" alt="france_05"></li>
       </ul>
+      <div class="btn-container">
+        <button class="prev-btn btn" onclick="prevBtn(1)">prev</button>
+        <button class="next-btn btn" onclick="nextBtn(1)">next</button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="theme_wrap slide-container">
+      <div class="title_wrap mg80">
+        <p class="sub_tlt">Switzerland</p>
+        <p class="main_tlt">스위스</p>
+      </div>
+      <ul class="slide sws">
+        <li><img src="media/sw_01.jpg" alt="switzerland_01"></li>
+        <li><img src="media/sw_02.jpg" alt="switzerland_02"></li>
+        <li><img src="media/sw_03.jpg" alt="switzerland_03"></li>
+        <li><img src="media/sw_04.jpg" alt="switzerland_04"></li>
+        <li><img src="media/sw_05.jpg" alt="switzerland_05"></li>
+      </ul>
+      <div class="btn-container">
+        <button class="prev-btn btn" onclick="prevBtn(2)">prev</button>
+        <button class="next-btn btn" onclick="nextBtn(2)">next</button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="theme_wrap slide-container mgb12">
+      <div class="title_wrap mg80">
+        <p class="sub_tlt">Italy</p>
+        <p class="main_tlt">이탈리아</p>
+      </div>
+      <ul class="slide itl">
+        <li><img src="media/it_01.jpg" alt="italy_01"></li>
+        <li><img src="media/it_02.jpg" alt="italy_02"></li>
+        <li><img src="media/it_03.jpg" alt="italy_03"></li>
+        <li><img src="media/it_04.jpg" alt="italy_04"></li>
+        <li><img src="media/it_05.jpg" alt="italy_05"></li>
+        <li><img src="media/it_06.jpg" alt="italy_06"></li>
+        <li><img src="media/it_07.jpg" alt="italy_07"></li>
+      </ul>
+      <div class="btn-container">
+        <button class="prev-btn btn" onclick="prevBtn(3)">prev</button>
+        <button class="next-btn btn" onclick="nextBtn(3)">next</button>
+      </div>
     </div>
   </section>
   <footer>
@@ -69,4 +114,5 @@
     </div>
   </footer>
 </body>
+
 </html>
